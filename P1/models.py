@@ -24,13 +24,13 @@ class Net(nn.Module):
         
         # first convolutional layer:
         self.conv1 = nn.Conv2d(1, 32, 5) 
-        # (32,220,220) output tensor # (W-F)/S + 1 = 96-5/1 +1=92 
+        # (32,92,92) output tensor # (W-F)/S + 1 = 96-5/1 +1=92 
         
         #First Max pooling layer:
         self.pool1 = nn.MaxPool2d(2,2) # (32,46,46) output tensor
         
         #Second convelutional layer:
-        self.conv2 = nn.Conv2d(32, 64, 5) # (W-F)/S +1 = (46-5)/1 + 1=42 #(64,106,106) output tensor 
+        self.conv2 = nn.Conv2d(32, 64, 5) # (W-F)/S +1 = (46-5)/1 + 1=42 #(64,42,42) output tensor 
         
         #Second Max pooling layer:
         self.pool2 = nn.MaxPool2d(2,2) # (64,21,21) output tensor
