@@ -1,1 +1,1 @@
-# udacity-CVND-P1-facial-keypoints-detection
+# udacity-Computer Vision Nano Degree projects
